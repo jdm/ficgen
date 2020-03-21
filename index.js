@@ -79,7 +79,7 @@ const reactions = [
     "turns into an idiot around them",
     "needs to figure out why",
     "won't stop annoying them",
-    "is a pain the arse",
+    "is a pain in the arse",
     "is super supportive, almost too much so",
     "is super chill about it",
     "doesn't care at all, not one bit",
