@@ -1,0 +1,76 @@
+<style>
+  body {
+      font-family: 'Lucida Grande';
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+  h3 {
+      border-bottom: 1px solid;
+  }
+  .wrapper {
+      box-shadow: 1px 1px 5px #aaa;
+      line-height: 1.286;
+  }
+  #meta {
+      border: 1px solid #ccc;
+      padding: 1.286em .75em;
+      clear: right;
+      position: relative;
+      overflow: hidden;
+  }
+  #meta dt {
+      width: 25%;
+      float: left;
+      clear: left;
+      min-width: 10.5em;
+  }
+  #meta dd {
+      width: 72.5%;
+      float: left;
+      margin: 0 0 .643em;
+  }
+  #prompt {
+  }
+  .tag {
+      text-decoration: underline;
+  }
+</style>
+<h1>Random fic prompter</h1>
+
+<div class="wrapper">
+  <dl id="meta">
+    <dt>Rating:</dt>
+    <dd id="rating"></dd>
+    <dt>Categories:</dt>
+    <dd id="category"></dd>
+    <dt>Additional tags:</dt>
+    <dd>
+      <div id="tags"></div>
+    </dd>
+  </dl>
+</div>
+<br>
+
+<h3>Summary:</h3>
+<div id="prompt"></div>
+
+<p><button id="another">Another!</button>
+
+<script type="module">
+  import { gen } from "./index.js";
+
+  function regen() {
+      const { prompt, tags, rating, category } = gen();
+      document.querySelector("#prompt").innerHTML = prompt;
+      let tagList = tags.map(tag => "<span class=tag>" + tag + "</span>");
+      document.querySelector("#tags").innerHTML = tagList.join(", ");
+      document.querySelector("#category").textContent = category;
+      document.querySelector("#rating").textContent = rating;
+  }
+
+  onload = () => regen();
+  document.querySelector("#another").onclick = () => regen();
+</script>
