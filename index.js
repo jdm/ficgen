@@ -58,6 +58,11 @@ const professions = [
     "werewolf",
     "Veela",
     "brewer",
+    "museum curator",
+    "potion brewer",
+    "bodyguard",
+    "dragon tamer",
+    "cursebreaker",
 ];
 
 function profession() {
