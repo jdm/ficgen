@@ -34,8 +34,12 @@
   }
   #prompt {
   }
-  .tag {
-      text-decoration: underline;
+  .link {
+      border-bottom: 1px dotted;
+  }
+  .link:hover {
+      background: #900;
+      color: #fff;
   }
 </style>
 <h1>Random fic prompter</h1>
@@ -46,6 +50,8 @@
     <dd id="rating"></dd>
     <dt>Categories:</dt>
     <dd id="category"></dd>
+    <dt>Fandom:</dt>
+    <dd><span class="link">Harry Potter - J. K. Rowling</span></dd>
     <dt>Additional tags:</dt>
     <dd>
       <div id="tags"></div>
@@ -64,10 +70,10 @@
   function regen() {
       const { prompt, tags, rating, category } = gen();
       document.querySelector("#prompt").innerHTML = prompt;
-      let tagList = tags.map(tag => "<span class=tag>" + tag + "</span>");
+      let tagList = tags.map(tag => "<span class=link>" + tag + "</span>");
       document.querySelector("#tags").innerHTML = tagList.join(", ");
-      document.querySelector("#category").textContent = category;
-      document.querySelector("#rating").textContent = rating;
+      document.querySelector("#category").innerHTML = "<span class=link>" + category + "</span>";
+      document.querySelector("#rating").innerHTML = "<span class=link>" + rating + "</span>";
   }
 
   onload = () => regen();

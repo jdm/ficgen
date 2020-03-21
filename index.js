@@ -1,6 +1,6 @@
 import * as random from "./randomtext.js";
 
-const characters = [
+let characters = [
     "Harry",
     "Draco",
     "Hermione",
@@ -122,7 +122,7 @@ function mistake() {
     return random.choose(mistakes);
 }
 
-const tags = [
+let tags = [
     "frotting",
     "deep and meaningful glances",
     "unnecessary descriptions of clothing",
