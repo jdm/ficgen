@@ -1,4 +1,5 @@
 import * as random from "./randomtext.js";
+import { generateTitle } from "./titles.js";
 
 let characters = [
     ["Harry", "M"],
@@ -241,6 +242,8 @@ export function gen() {
         random.choose(extras),
     ]);
 
+    const title = generateTitle();
+
     let numTags = random.wholeNumber(3, 10);
     let promptTags = [];
     while (promptTags.length < numTags) {
@@ -267,5 +270,6 @@ export function gen() {
         category: category,
         characters: usedChars.map(c => c[0]),
         relationships: relationship,
+        title: title,
     };
 }

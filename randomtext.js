@@ -49,11 +49,11 @@ export function wholeNumber(start, end) {
 }
 
 export function bool() {
-    return !!whole_number(0, 2);
+    return !!wholeNumber(0, 2);
 }
 
 export function percentage() {
-    return whole_number(0, 100) + "%";
+    return wholeNumber(0, 100) + "%";
 }
 
 export function paragraph(list) {
