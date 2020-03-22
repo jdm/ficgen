@@ -32,6 +32,8 @@ let characters = [
     ["Lavender", "F"],
     ["Parvati", "F"],
     ["Padma", "F"],
+    ["Teddy", "M"],
+    ["Scorpius", "M"],
 ];
 
 let usedChars = [];
@@ -188,7 +190,7 @@ const summaries = [
     [character, "goes undercover as a", profession, "to catch", character, "in a compromising position.",
      "When a bond of professional respect develops, can they still complete the job?"],
     ["They've been rivals for years.", character, "and", character, "are the darlings of the press but they can't stand each other.", "Who will end up coming out on top in the", profession, "battle?"],
-    [character, "starts spending a lot of time with", character, ".", character, reaction, "about it,", "but", character, "insists it's fine.", "Will reason prevail?"]
+    [character, "starts spending a lot of time with", character, ".", character, reaction, "about it,", "but", character, "insists it's fine.", "Will reason prevail?"],
 ];
 
 const extras = [
@@ -211,6 +213,8 @@ const extras = [
     "There's a mystery that needs solving!",
     "This mess won't untangle itself.",
     "Warning: there is only one bed.",
+    "It's going to hurt before it feels better.",
+    "It's not repressing feelings if there's nothing to repress, right? Everything's fine.",
 ];
 
 const ratings = [
