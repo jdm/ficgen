@@ -35,6 +35,11 @@ let characters = [
     ["Padma", "F"],
     ["Teddy", "M"],
     ["Scorpius", "M"],
+    ["Dean", "M"],
+    ["Seamus", "M"],
+    ["Madame Pomfrey", "F"],
+    ["Robards", "M"],
+    ["Kingsley", "M"],
 ];
 
 let usedChars = [];
@@ -146,6 +151,7 @@ const mistakes = [
     "save a dying family member",
     "save the life of a friend",
     "fix an old mistake",
+    "avert an embarassing situation",
 ];
 
 function mistake() {
