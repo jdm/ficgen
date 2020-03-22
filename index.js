@@ -235,7 +235,7 @@ const summaries = [
      "When", relationship, "develops, can they still complete the job?"],
     ["They've been rivals for years.", character, "and", character, "are the darlings of the press but they can't stand each other.", "Who will end up coming out on top in the", profession, "battle?"],
     [character, "starts spending a lot of time with", character, ".", character, reaction, ",", "but", character, "insists it's fine.", "Will reason prevail?"],
-    [character, "can't stand", character, "and everybody knows it.", "When a", problem, "forces them in close proximity and", relationship, "develops, will anything be the same?"],
+    [character, "can't stand", character, "and everybody knows it.", "When", problem, "forces them in close proximity and", relationship, "develops, will anything be the same?"],
 ];
 
 const extras = [
