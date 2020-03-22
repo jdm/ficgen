@@ -110,6 +110,9 @@ const reactions = [
     "is furious all the time",
     "pretends they don't care",
     "doesn't notice anything",
+    "doesn't know how to deal with it",
+    "gets jealous",
+    "is jealous but doesn't even realize it",
 ];
 
 function reaction() {
@@ -193,7 +196,7 @@ const summaries = [
     [character, "goes undercover as a", profession, "to catch", character, "in a compromising position.",
      "When a bond of professional respect develops, can they still complete the job?"],
     ["They've been rivals for years.", character, "and", character, "are the darlings of the press but they can't stand each other.", "Who will end up coming out on top in the", profession, "battle?"],
-    [character, "starts spending a lot of time with", character, ".", character, reaction, "about it,", "but", character, "insists it's fine.", "Will reason prevail?"],
+    [character, "starts spending a lot of time with", character, ".", character, reaction, ",", "but", character, "insists it's fine.", "Will reason prevail?"],
 ];
 
 const extras = [
