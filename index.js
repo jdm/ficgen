@@ -78,6 +78,10 @@ const professions = [
     "bodyguard",
     "dragon tamer",
     "cursebreaker",
+    "baker",
+    "librarian",
+    "politician",
+    "Unspeakable",
 ];
 
 function profession() {
