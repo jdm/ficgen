@@ -195,7 +195,7 @@ const tags = [
 
 const summaries = [
     ["The one where", character, "is a", profession, "and", character, reaction, "."],
-    [character, ", the famous", profession, ", still can't get over", character, ".",
+    [character, ", a famous", profession, ", still can't get over", character, ".",
      "Meanwhile,", character, "hatches a plot to", plot, "."],
     [character, "goes back in time to", mistake, ".", character, reaction, "."],
     [character, "is madly in love with", character, ", who happens to be a", profession, ".",
