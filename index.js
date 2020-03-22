@@ -40,32 +40,32 @@ let characters = [
     ["Madame Pomfrey", "F"],
     ["Robards", "M"],
     ["Kingsley", "M"],
-    ["Petunia", "F"]
-    ["Cho", "F"]
-    ["Percy", "M"]
-    ["Dumbledore", "M"]
-    ["Grindelwald", "M"]
-    ["Viktor Krum", "M"]
-    ["Mad-Eye Moody", "M"]
-    ["Lily", "F"]
-    ["Remus", "M"]
-    ["James", "M"]
-    ["Peter", "M"]
-    ["The Grey Lady", "F"]
-    ["Tonks", "F"]
-    ["Voldemort", "M"]
-    ["Beedle the Bard", "M"]
-    ["Firenze", "M"]
-    ["Oliver", "M"]
-    ["Bellatrix", "F"]
-    ["Angelina", "F"]
-    ["Lee", "M"]
-    ["Marietta", "F"]
-    ["Gabrielle", "F"]
-    ["Hannah", "F"]
-    ["Katie", "F"]
-    ["Susan", "F"]
-    ["Millicent", "F"]
+    ["Petunia", "F"],
+    ["Cho", "F"],
+    ["Percy", "M"],
+    ["Dumbledore", "M"],
+    ["Grindelwald", "M"],
+    ["Viktor Krum", "M"],
+    ["Mad-Eye Moody", "M"],
+    ["Lily", "F"],
+    ["Remus", "M"],
+    ["James", "M"],
+    ["Peter", "M"],
+    ["The Grey Lady", "F"],
+    ["Tonks", "F"],
+    ["Voldemort", "M"],
+    ["Beedle the Bard", "M"],
+    ["Firenze", "M"],
+    ["Oliver", "M"],
+    ["Bellatrix", "F"],
+    ["Angelina", "F"],
+    ["Lee", "M"],
+    ["Marietta", "F"],
+    ["Gabrielle", "F"],
+    ["Hannah", "F"],
+    ["Katie", "F"],
+    ["Susan", "F"],
+    ["Millicent", "F"],
 ];
 
 let usedChars = [];
@@ -233,65 +233,65 @@ const tags = [
     "epilogue-compliant",
     "this is not an AU",
     "the most AU of AUs",
-    "accidental marriage"
-    "apocafic"
-    "time travel"
-    "feeeeeeeeeeeeeeeeeelings"
-    "take your fandom to work day"
-    "food as a metaphor for love"
-    "fluff"
-    "camping"
-    "competence kink"
-    "crossdressing"
-    "dragons"
-    "evil twin"
-    "family of choice"
-    "futurefic"
-    "genderfuck"
-    "undercover in a gay bar"
-    "ghosts"
-    "huddling for warmth"
-    "rate h for hugs"
-    "hurt/comfort"
-    "kidnapping"
-    "identity porn"
-    "marriage of convenience"
-    "mirror-verse"
-    "Marriage Law Challenge"
-    "mundane au"
-    "outside POV"
-    "queer gen"
-    "no beta we die like men"
-    "sedoretu"
-    "psychic bond"
-    "groundhog day"
-    "tentacles"
-    "they're all veelas"
-    "wingfic"
-    "dead dove: do not eat"
-    "happy ending"
-    "closeted character"
-    "alternate universe - canon divergence"
-    "podfic available"
-    "mission fic"
-    "murder"
-    "this is so silly I'm so sorry"
-    "shenanigans abound"
-    "a little bit of plot but not much"
-    "alternate universe - space"
-    "epistolary"
-    "unresolved sexual tension"
-    "interspecies relationship"
-    "werewolves"
-    "bad communication"
-    "survivor guilt"
-    "pirates"
-    "do not argue with my headcanon"
-    "there will be a sequel"
-    "stealth crossover"
-    "temporary character death"
-    "cultural differences"
-    "enemies to lovers"
+    "accidental marriage",
+    "apocafic",
+    "time travel",
+    "feeeeeeeeeeeeeeeeeelings",
+    "take your fandom to work day",
+    "food as a metaphor for love",
+    "fluff",
+    "camping",
+    "competence kink",
+    "crossdressing",
+    "dragons",
+    "evil twin",
+    "family of choice",
+    "futurefic",
+    "genderfuck",
+    "undercover in a gay bar",
+    "ghosts",
+    "huddling for warmth",
+    "rate h for hugs",
+    "hurt/comfort",
+    "kidnapping",
+    "identity porn",
+    "marriage of convenience",
+    "mirror-verse",
+    "Marriage Law Challenge",
+    "mundane au",
+    "outside POV",
+    "queer gen",
+    "no beta we die like men",
+    "sedoretu",
+    "psychic bond",
+    "groundhog day",
+    "tentacles",
+    "they're all veelas",
+    "wingfic",
+    "dead dove: do not eat",
+    "happy ending",
+    "closeted character",
+    "alternate universe - canon divergence",
+    "podfic available",
+    "mission fic",
+    "murder",
+    "this is so silly I'm so sorry",
+    "shenanigans abound",
+    "a little bit of plot but not much",
+    "alternate universe - space",
+    "epistolary",
+    "unresolved sexual tension",
+    "interspecies relationship",
+    "werewolves",
+    "bad communication",
+    "survivor guilt",
+    "pirates",
+    "do not argue with my headcanon",
+    "there will be a sequel",
+    "stealth crossover",
+    "temporary character death",
+    "cultural differences",
+    "enemies to lovers",
 ];
 
 const relationships = [
