@@ -269,12 +269,18 @@ export function gen() {
         }
         relationship = [usedChars[0][0] + "/" + usedChars[1][0]];
     }
+
+    let extraChars = random.wholeNumber(0, 3);
+    while (extraChars--) {
+        character();
+    }
+
     return {
         prompt: prompt,
         tags: promptTags,
         rating: random.choose(ratings),
         category: category,
-        characters: usedChars.map(c => c[0]),
+        characters: random.shuffle(usedChars.map(c => c[0])),
         relationships: relationship,
         title: title,
     };
