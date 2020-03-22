@@ -1,35 +1,50 @@
 import * as random from "./randomtext.js";
 
 let characters = [
-    "Harry",
-    "Draco",
-    "Hermione",
-    "Ron",
-    "Pansy",
-    "Neville",
-    "Luna",
-    "Ginny",
-    "Fred",
-    "George",
-    "Theo",
-    "Charlie",
-    "Goyle",
-    "Lucius",
-    "Remus",
-    "Sirius",
-    "Dudley",
-    "Blaise",
-    "Dobby",
-    "Kreacher",
-    "Fleur",
-    "Bill",
-    "Molly",
-    "Arthur",
-    "Snape",
+    ["Harry", "M"],
+    ["Draco", "M"],
+    ["Hermione", "F"],
+    ["Ron", "M"],
+    ["Pansy", "F"],
+    ["Neville", "M"],
+    ["Luna", "F"],
+    ["Ginny", "F"],
+    ["Fred", "M"],
+    ["George", "M"],
+    ["Theo", "M"],
+    ["Charlie", "M"],
+    ["Goyle", "M"],
+    ["Lucius", "M"],
+    ["Narcissa", "F"],
+    ["Remus", "M"],
+    ["Sirius", "M"],
+    ["Dudley", "M"],
+    ["Blaise", "M"],
+    ["Dobby", "M"],
+    ["Kreacher", "M"],
+    ["Fleur", "F"],
+    ["Bill", "M"],
+    ["Molly", "F"],
+    ["Arthur", "M"],
+    ["Snape", "M"],
+    ["Professor McGonagall", "F"],
+    ["Hagrid", "M"],
+    ["Lavender", "F"],
+    ["Parvati", "F"],
+    ["Padma", "F"],
 ];
 
+let usedChars = [];
+
 function character() {
-    return random.chooseAndRemove(characters);
+    while (true) {
+        let char = random.choose(characters);
+        if (usedChars.map(c => c[0]).indexOf(char[0]) > -1) {
+            continue;
+        }
+        usedChars.push(char);
+        return char[0];
+    }
 }
 
 const professions = [
@@ -84,6 +99,8 @@ const reactions = [
     "is super chill about it",
     "doesn't care at all, not one bit",
     "is furious all the time",
+    "pretends they don't care",
+    "doesn't notice anything",
 ];
 
 function reaction() {
@@ -122,7 +139,7 @@ function mistake() {
     return random.choose(mistakes);
 }
 
-let tags = [
+const tags = [
     "frotting",
     "deep and meaningful glances",
     "unnecessary descriptions of clothing",
@@ -200,28 +217,41 @@ const ratings = [
     "Explicit",
 ];
 
-const categories = [
-    "M/M",
-    "F/F",
-    "M/F",
-    "Multi",
-    "Other",
-    "Gen",
-];
-
 export function gen() {
+    usedChars = [];
+
+    let summary = random.choose(summaries);
+    console.log(summary);
+    let prompt = random.combine([
+        random.combine(summary),
+        random.choose(extras),
+    ]);
+
     let numTags = random.wholeNumber(3, 10);
     let promptTags = [];
-    for (var i = 0; i < numTags; i++) {
-        promptTags.push(random.chooseAndRemove(tags))
+    while (promptTags.length < numTags) {
+        let tag = random.choose(tags);
+        if (promptTags.indexOf(tag) > -1) {
+            continue;
+        }
+        promptTags.push(tag);
+    }
+    let category = "Gen";
+    let relationship = [];
+    console.log(usedChars);
+    if (usedChars.length > 1) {
+        category = usedChars[0][1] + "/" + usedChars[1][1];
+        if (category == "F/M") {
+            category = "M/F";
+        }
+        relationship = [usedChars[0][0] + "/" + usedChars[1][0]];
     }
     return {
-        prompt: random.combine([
-            random.combine(random.choose(summaries)),
-            random.choose(extras),
-        ]),
+        prompt: prompt,
         tags: promptTags,
         rating: random.choose(ratings),
-        category: random.choose(categories),
+        category: category,
+        characters: usedChars.map(c => c[0]),
+        relationships: relationship,
     };
 }

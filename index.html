@@ -55,6 +55,10 @@
     <dd id="category"></dd>
     <dt>Fandom:</dt>
     <dd><span class="link">Harry Potter - J. K. Rowling</span></dd>
+    <dt>Relationships:</dt>
+    <dd id="relationships"></dd>
+    <dt>Characters:</dt>
+    <dd id="characters"></dd>
     <dt>Additional tags:</dt>
     <dd>
       <div id="tags"></div>
@@ -70,13 +74,22 @@
 <script type="module">
   import { gen } from "./index.js";
 
+  function insertList(list, container) {
+      if (!Array.isArray(list)) {
+          list = [list];
+      }
+      let newList = list.map(item => "<span class=link>" + item + "</span>");
+      document.querySelector(container).innerHTML = newList.join(", ");
+  }
+
   function regen() {
-      const { prompt, tags, rating, category } = gen();
+      const { prompt, tags, rating, category, characters, relationships } = gen();
       document.querySelector("#prompt").innerHTML = prompt;
-      let tagList = tags.map(tag => "<span class=link>" + tag + "</span>");
-      document.querySelector("#tags").innerHTML = tagList.join(", ");
-      document.querySelector("#category").innerHTML = "<span class=link>" + category + "</span>";
-      document.querySelector("#rating").innerHTML = "<span class=link>" + rating + "</span>";
+      insertList(tags, "#tags");
+      insertList(category, "#category");
+      insertList(rating, "#rating");
+      insertList(characters, "#characters");
+      insertList(relationships, "#relationships");
   }
 
   onload = () => regen();
