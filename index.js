@@ -193,6 +193,37 @@ const tags = [
     "the most AU of AUs",
 ];
 
+const relationships = [
+    "a bond of professional respect",
+    "a steamy working relationship",
+    "a fellowship made of stolen glances",
+    "a steamy partnership",
+    "a tumultuous relationship",
+    "an attachment",
+    "a mutual friendship",
+];
+
+function relationship() {
+    return random.choose(relationships);
+}
+
+const problems = [
+    "an accidental spell ricochet",
+    "a juvenile prank going wrong",
+    "fate",
+    "a prophecy",
+    "an intervention by an exasperated friend",
+    "a bet",
+    "hubris",
+    "poor planning",
+    "a quarantine",
+    "a natural disaster",
+];
+
+function problem() {
+    return random.choose(problems);
+}
+
 const summaries = [
     ["The one where", character, "is a", profession, "and", character, reaction, "."],
     [character, ", a famous", profession, ", still can't get over", character, ".",
@@ -201,9 +232,10 @@ const summaries = [
     [character, "is madly in love with", character, ", who happens to be a", profession, ".",
      "How can they possibly work this out?", character, "somehow stumbles on the perfect solution."],
     [character, "goes undercover as a", profession, "to catch", character, "in a compromising position.",
-     "When a bond of professional respect develops, can they still complete the job?"],
+     "When", relationship, "develops, can they still complete the job?"],
     ["They've been rivals for years.", character, "and", character, "are the darlings of the press but they can't stand each other.", "Who will end up coming out on top in the", profession, "battle?"],
     [character, "starts spending a lot of time with", character, ".", character, reaction, ",", "but", character, "insists it's fine.", "Will reason prevail?"],
+    [character, "can't stand", character, "and everybody knows it.", "When a", problem, "forces them in close proximity and", relationship, "develops, will anything be the same?"],
 ];
 
 const extras = [
