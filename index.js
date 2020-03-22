@@ -84,6 +84,9 @@ const professions = [
     "librarian",
     "politician",
     "Unspeakable",
+    "Quidditch coach",
+    "hitwizard",
+    "investment banker",
 ];
 
 function profession() {
